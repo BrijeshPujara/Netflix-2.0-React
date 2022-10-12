@@ -19,8 +19,8 @@ function Banner() {
 
     fetchData();
   }, []);
-    
-    console.log(movie)
+
+  console.log(movie);
 
   // truncating the description length of the movie
   const truncate = (string, n) => {
@@ -32,7 +32,9 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url('https://image.tmdb.org/t/p/original/${movie?.backdrop_path}')`,
+        backgroundImage: `url('https://image.tmdb.org/t/p/original/${
+          movie?.backdrop_path || movie?.poster_path
+        }')`,
         backgroundPosition: "center center",
       }}
     >
