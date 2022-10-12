@@ -9,12 +9,18 @@ function Banner() {
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(requests.fetchTopRated);
-      console.log(request);
-      setMovie(request);
+      setMovie(
+        request.data.results[
+          Math.floor(Math.random() * request.data.results.length - 1)
+        ]
+      );
+      return request;
     }
 
     fetchData();
   }, []);
+    
+    console.log(movie)
 
   // truncating the description length of the movie
   const truncate = (string, n) => {
@@ -26,18 +32,20 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url('https://marcos.kirsch.mx/wp-content/uploads/2013/01/cropped-cropped-cropped-black-banner.png')`,
+        backgroundImage: `url('https://image.tmdb.org/t/p/original/${movie?.backdrop_path}')`,
         backgroundPosition: "center center",
       }}
     >
       <div className="banner__contents">
-        <h1 className="banner__title">Movie Name</h1>
+        <h1 className="banner__title">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
         <div className="banner__buttons">
           <button className="banner__btn">Play</button>
           <button className="banner__btn">My List</button>
         </div>
         <h1 className="banner__description">
-          {truncate(`This is a test description`, 150)}
+          {truncate(movie?.overview, 150)}
         </h1>
       </div>
 
