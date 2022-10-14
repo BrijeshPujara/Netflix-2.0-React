@@ -20,8 +20,6 @@ function Banner() {
     fetchData();
   }, []);
 
-  console.log(movie);
-
   // truncating the description length of the movie
   const truncate = (string, n) => {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
