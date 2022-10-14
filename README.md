@@ -1,12 +1,11 @@
 # Netflix 2.0 - React
 
-- Test Driven Development - (Jest - Jest Coverage, Cypress)
 - React
 - Redux
 - Firebase DB
-- Stripe 
+- Stripe Payment 
 - Google Auth
-- Version Control(Git)
+- Version Control - (Git)
 - TMDB API
 
 ### Program preview
