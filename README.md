@@ -3,14 +3,14 @@
 - React
 - Redux
 - Firebase DB
-- Stripe Payment 
+- Stripe Payment
 - Google Auth
 - Version Control - (Git)
 - TMDB API
 
 ### Program preview
 
-![](img)
+![](ProgramPreview.png)
 
 ## Specification
 
@@ -25,10 +25,10 @@
 ```javascript
 
 ```
+
 ```javascript
 
 ```
-
 
 Expected behavior
 
@@ -37,8 +37,6 @@ Expected behavior
 ```
 
 ### Requirements
-
-
 
 ## Installation
 
