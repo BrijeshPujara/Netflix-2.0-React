@@ -17,14 +17,19 @@
 ### User Story
 
 ```
+As a user I would like to create a Netflix account and see a list of
+susbcriptions avaialble to me.
+
+As a user I would like to select a subscription best suited for me.
+
+As a user I would like to see a list of programs available to me.
 
 ```
 
 ### Design
 
-```javascript
+![](design.png)
 
-```
 
 ```javascript
 
