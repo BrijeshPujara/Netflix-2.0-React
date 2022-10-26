@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import Nav from "../components/Nav";
 import { selectUser } from "../features/userSlice";
-import db, { auth } from "../firebase";
+import { auth } from "../firebase";
 import "./ProfileScreen.css";
 import PlansScreen from "./PlansScreen";
 

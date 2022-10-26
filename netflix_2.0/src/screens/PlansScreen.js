@@ -85,7 +85,9 @@ function PlansScreen() {
       {subscription && (
         <p>
           Renewal Date:{" "}
-          {new Date(subscription?.current_period_end * 1000).toLocaleDateString()}
+          {new Date(
+            subscription?.current_period_end * 1000
+          ).toLocaleDateString()}
         </p>
       )}
       {Object.entries(products).map(([productId, productData]) => {
